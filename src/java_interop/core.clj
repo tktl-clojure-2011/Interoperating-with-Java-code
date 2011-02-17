@@ -1,4 +1,5 @@
-(ns java-interop.core)
+(ns java-interop.core
+  (:import [java.util ArrayList Random Callable Comparator])
 
 (defn randoms [seed a-count]
   ":(")
