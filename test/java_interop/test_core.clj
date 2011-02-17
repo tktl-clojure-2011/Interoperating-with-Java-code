@@ -15,3 +15,7 @@
        (seq (arraylist-flatten [[1 2 3] [4 5 6]])) => [1 2 3 4 5 6]
        (.getClass (arraylist-flatten [[1 2 3] [4 5 6]])) 
            => java.util.ArrayList)
+
+(facts "callable-pony"
+       (instance? Callable (callable-pony)) => true
+       (.call (callable-pony)) => :pony)
