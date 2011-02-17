@@ -26,6 +26,7 @@
        (minimum-str ["OMG" "ponies" ""]) => "")
 
 (facts "comparing"
+       (Collections/min #{"abc" "cat" ":D"} (comparing count)) => ":D"
        (.compare (comparing #(get {:a 1 :b 2} %)) :b :a) => 1
        (.compare (comparing #(get {:a 1 :b 2} %)) :a :b) => -1
        (instance? Comparator (comparing (partial * 2))) => true
