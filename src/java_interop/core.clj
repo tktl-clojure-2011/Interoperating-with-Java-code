@@ -9,4 +9,7 @@
 (defn callable-pony []
   ":(")
 
+(defn minimum-str [strings]
+  ":(")
+
 ;^_^

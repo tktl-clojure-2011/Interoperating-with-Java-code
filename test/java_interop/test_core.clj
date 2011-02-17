@@ -19,3 +19,7 @@
 (facts "callable-pony"
        (instance? Callable (callable-pony)) => true
        (.call (callable-pony)) => :pony)
+
+(facts "minimum-str"
+       (minimum-str #{"abc" "cat" ":D"}) => ":D"
+       (minimum-str ["OMG" "ponies" ""]) => "")
