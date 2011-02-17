@@ -1,6 +1,9 @@
 (ns java-interop.core
   (:import [java.util ArrayList Random Collections Comparator]))
 
+(defn normalize [a-str]
+  ":(")
+
 (defn randoms [seed a-count]
   ":(")
 
@@ -18,7 +21,6 @@
 
 (defn sum-array [array]
   ":(")
-
 
 (defn fibo-array [amount]
   ":(")

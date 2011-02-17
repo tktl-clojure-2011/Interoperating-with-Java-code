@@ -3,6 +3,13 @@
         midje.sweet)
   (:import [java.util Comparator Collections]))
 
+(facts "normalize"
+       (normalize "MAHTIFANTTI")     => "mahtifantti"
+       (normalize "   Muhkufantti ") => "muhkufantti"
+       (normalize "")                => ""
+       (normalize "    ")            => ""
+       (normalize " c l j ")         => "clj")
+
 (facts "randoms"
        (randoms 1 3)
          => [-1155869325 431529176 1761283695]
