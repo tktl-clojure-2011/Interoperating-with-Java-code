@@ -1,6 +1,7 @@
 (ns java-interop.test-core
   (:use java-interop.core
-        midje.sweet))
+        midje.sweet)
+  (:import [java.util Comparator Collections]))
 
 (facts "randoms"
        (randoms 1 3)

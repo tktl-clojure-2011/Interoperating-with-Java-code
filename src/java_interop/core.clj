@@ -1,5 +1,5 @@
 (ns java-interop.core
-  (:import [java.util ArrayList Random Callable Comparator])
+  (:import [java.util ArrayList Random Collections Comparator]))
 
 (defn randoms [seed a-count]
   ":(")
@@ -11,6 +11,9 @@
   ":(")
 
 (defn minimum-str [strings]
+  ":(")
+
+(defn comparing [function]
   ":(")
 
 ;^_^
