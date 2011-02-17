@@ -32,3 +32,8 @@
        (instance? Comparator (comparing (partial * 2))) => true
        (Collections/min [:a :b :c] (comparing #(get {:a 3 :b 0 :c 1} %))) 
          => :b)
+
+(facts "sum-array"
+       (sum-array (to-array [1 2 3]))  => 6
+       (sum-array (float-array [5 4])) => 9
+       (sum-array (into-array []))     => 0)

@@ -16,4 +16,7 @@
 (defn comparing [function]
   ":(")
 
+(defn sum-array [array]
+  ":(")
+
 ;^_^
