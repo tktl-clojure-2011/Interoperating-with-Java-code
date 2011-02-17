@@ -8,7 +8,7 @@
        (normalize "   Muhkufantti ") => "muhkufantti"
        (normalize "")                => ""
        (normalize "    ")            => ""
-       (normalize " c l j ")         => "clj")
+       (normalize " c l j ")         => "c l j")
 
 (facts "randoms"
        (randoms 1 3)
