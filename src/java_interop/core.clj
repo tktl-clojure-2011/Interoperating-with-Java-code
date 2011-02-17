@@ -19,4 +19,8 @@
 (defn sum-array [array]
   ":(")
 
+
+(defn fibo-array [amount]
+  ":(")
+
 ;^_^
