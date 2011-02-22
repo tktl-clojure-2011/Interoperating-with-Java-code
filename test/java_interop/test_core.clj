@@ -46,6 +46,6 @@
        (sum-array (into-array []))     => 0)
 
 (facts "fibo-array"
-       (instance? (.getClass (into-array [1])) (fibo-array 5)) => true
+       (instance? (.getClass (int-array 0)) (fibo-array 5)) => true
        (seq (fibo-array 6)) => '(0 1 1 2 3 5)
        (seq (fibo-array 8)) => '(0 1 1 2 3 5 8 13))
